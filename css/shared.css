@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 
 :root {
     --background: snow;
-    --text: DarkSlateGray;
-    --link: DeepPink;
+    --text: #454545;
+    --link: #E6007A;
   }
 
 body {
@@ -15,7 +15,7 @@ body {
     line-height: inherit;
     background-color: var(--background);
     color: var(--text);
-    font-family:"Playpen Sans", Arial, Helvetica, sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: large;
 }
 
@@ -62,7 +62,7 @@ img
 
 section#contact
 {
-font-size: 24px;
+font-size: 20px;
 text-align: right;
 }
 
@@ -70,7 +70,7 @@ section#contact a
 {
     background-color: var(--link);
     color: white;
-    padding: 2px 12px;
+    padding: 10px 16px;
     border-radius: 12px;
     margin: 10px 2px;
 }
@@ -80,6 +80,21 @@ section#contact a:hover
 background-color: MediumVioletRed;
 text-decoration: none;
 }
+
+@media (max-width: 450px) {
+    section#contact
+    {
+    text-align: center;
+    }
+  }
+
+  @media (max-width: 345px) {
+    section#contact a
+    {
+        width: 90%;
+    }
+
+  }
 
 
 /* FOOTER */
@@ -114,6 +129,14 @@ h1
     padding: 0 0 10px 0;
 }
 
+@media (max-width: 700px) {
+    h1 {
+      font-size: 50px;
+    }
+  }
+
+
+
 
 
 
@@ -125,11 +148,17 @@ h2
     font-weight: 500;
 }
 
+@media (max-width: 700px) {
+    h2 {
+      font-size: 20px;
+    }
+  }
+
 h3
 {
     font-family: "Sansita", sans-serif;
     color: var(--link);
-    padding: 0 0 20px 0;
+    padding: 0 0 10px 0;
     font-size: xx-large;
     font-weight: 700;
     font-style: italic;
@@ -299,8 +328,8 @@ text-decoration: none;
 section.testimonial
 {
     padding: 60px;
-    background-color: var(--link);
-    color: white;
+    background-color: #FFC7D2;
+    color: #B3005F;
     border-radius: 26px;
     margin: 0 0 40px 0;
 
