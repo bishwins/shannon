@@ -1,79 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+
 
 :root {
     --background: snow;
     --text: DarkSlateGray;
-    --link: crimson;
+    --link: DeepPink;
   }
 
 body {
-    font-family: 'JetBrains Mono', monospace;
     padding: 2.5em;
     margin: 0 auto;
     max-width: 900px;
     line-height: normal;
     background-color: var(--background);
     color: var(--text);
-}
-
-body#paintings
-{
-
-    --link: DeepPink;
-}
-
-body#stingers
-{
-    --link: #006adc;
-}
-
-body#beatles
-{
-    --link: DimGray;
-}
-
-body#wolvie
-{
-    --link: IndianRed;
-}
-
-body#bello
-{
-    --link: limegreen;
+    font-family:"Playpen Sans", Arial, Helvetica, sans-serif;
 }
 
 
-body#destiny
-{
-    --link: SlateGray;
-}
-
-
-body#cutefight
-{
-    --link: HotPink;
-}
-
-body#crooked
-{
-    --link: OrangeRed;
-}
-
-body#avengers
-{
-    --link: Blue;
-}
-
-body#knights
-{
-    --link: salmon;
-}
-
-body#dungeon
-{
-    --link: DarkSlateBlue;
-}
 
 body#drhoneybrew
 {
@@ -109,7 +54,7 @@ footer
 p
 {
     padding: 0 0 1em 0;
-    line-height: normal;
+    line-height: inherit;
 }
 
 
@@ -118,12 +63,27 @@ img
     width: 100%;
 }
 
-/* HEADER */
-
-header
+section#contact
 {
-    text-align: right;
+font-size: 24px;
+text-align: right;
 }
+
+section#contact a
+{
+    background-color: var(--link);
+    color: white;
+    padding: 2px 12px;
+    border-radius: 12px;
+    margin: 10px 2px;
+}
+
+section#contact a:hover
+{
+background-color: MediumVioletRed;
+text-decoration: none;
+}
+
 
 /* FOOTER */
 
@@ -146,46 +106,46 @@ footer p#copyright {
 
 /* HEADLINES */
 
-h1,
+h1
+{
+    font-family: "Sansita", sans-serif;
+    color: var(--link);
+    font-size: 80px;
+    font-weight: 800;
+    font-style: italic;
+
+    padding: 0 0 10px 0;
+}
+
+
+
+
 h2
 {
-    font-family: "Space Grotesk", sans-serif;
-    text-transform: uppercase;
     color: var(--link);
     padding: 0 0 20px 0;
-    font-size: x-large;
-    font-weight: 700;
+    font-size:24px;
+    font-weight: 500;
 }
 
 h3
 {
-    font-family: "Space Grotesk", sans-serif;
-    text-transform: uppercase;
+    font-family: "Sansita", sans-serif;
     color: var(--link);
     padding: 0 0 20px 0;
-    font-size: large;
+    font-size: xx-large;
     font-weight: 700;
+    font-style: italic;
 }
 
 h4
 {
-    font-family: "Space Grotesk", sans-serif;
-    text-transform: uppercase;
     color: var(--link);
-    font-size: medium;
+    font-size: large;
     font-weight: 500;
 
 }
 
-
-/* NAV */
-
-nav
-{
-    padding: 0 0 40px 0;
-    line-height: normal;
-    font-size: small;
-}
 
 /* SECTIONS */
 
@@ -242,12 +202,6 @@ section.featured a:hover
     transform: scale(1.01);
 }
 
-/* Navigation filter styles */
-nav#filter {
-    text-align: right;
-}
-
-
 
 
 
@@ -262,7 +216,7 @@ main section.big img {
 
 main section.big figcaption,
 main section.big a {
-    font-size: x-small;
+    font-size: small;
     text-align: center;
     text-decoration: none;
 }
@@ -375,7 +329,6 @@ section.testimonial
 
 section.testimonial cite
 {
-    font-family: "Space Grotesk", sans-serif;
     text-transform: uppercase;
     font-size: large;
     font-weight: 700;
