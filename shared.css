@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+    --background: snow;
+    --text: DarkSlateGray;
+    --link: crimson;
+  }
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    padding: 2.5em;
+    margin: 0 auto;
+    max-width: 900px;
+    line-height: normal;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+body#paintings
+{
+
+    --link: DeepPink;
+}
+
+body#stingers
+{
+    --link: #006adc;
+}
+
+body#beatles
+{
+    --link: DimGray;
+}
+
+body#wolvie
+{
+    --link: IndianRed;
+}
+
+body#bello
+{
+    --link: limegreen;
+}
+
+
+body#destiny
+{
+    --link: SlateGray;
+}
+
+
+body#cutefight
+{
+    --link: HotPink;
+}
+
+body#crooked
+{
+    --link: OrangeRed;
+}
+
+body#avengers
+{
+    --link: Blue;
+}
+
+body#knights
+{
+    --link: salmon;
+}
+
+body#dungeon
+{
+    --link: DarkSlateBlue;
+}
+
+body#drhoneybrew
+{
+    --link: Chocolate;
+}
+
+/* LINKS */
+
+a,
+a:hover {
+    color: inherit;
+    line-height: normal;
+    text-underline-offset: 4px;
+    text-decoration-color: var(--link);
+    text-decoration-thickness: 1px;
+    display: inline-block;
+}
+
+a:hover {
+    transform: scale(1.025);
+}
+
+
+/* LAYOUT */
+
+header,
+main,
+footer
+{
+    padding: 0 0 1em 0;
+}
+
+p
+{
+    padding: 0 0 1em 0;
+    line-height: normal;
+}
+
+
+img
+{
+    width: 100%;
+}
+
+/* HEADER */
+
+header
+{
+    text-align: right;
+}
+
+/* FOOTER */
+
+footer a i {
+    font-size: x-large;
+    padding: 0 0 .5em 0;
+}
+
+footer a,
+footer a:hover {
+    text-decoration: none;
+    color: var(--link);
+}
+
+footer p#copyright {
+    font-size: x-small;
+}
+
+
+
+/* HEADLINES */
+
+h1,
+h2
+{
+    font-family: "Space Grotesk", sans-serif;
+    text-transform: uppercase;
+    color: var(--link);
+    padding: 0 0 20px 0;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+h3
+{
+    font-family: "Space Grotesk", sans-serif;
+    text-transform: uppercase;
+    color: var(--link);
+    padding: 0 0 20px 0;
+    font-size: large;
+    font-weight: 700;
+}
+
+h4
+{
+    font-family: "Space Grotesk", sans-serif;
+    text-transform: uppercase;
+    color: var(--link);
+    font-size: medium;
+    font-weight: 500;
+
+}
+
+
+/* NAV */
+
+nav
+{
+    padding: 0 0 40px 0;
+    line-height: normal;
+    font-size: small;
+}
+
+/* SECTIONS */
+
+address
+{
+    color: var(--link);
+padding: 0 0 6px 0;
+    font-size: medium;
+    font-weight: 700;
+    text-align: center;
+}
+
+section
+{
+    padding: 0 0 40px 0;
+}
+
+/* SECTIONS GRIDS */
+
+
+section.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 24px;
+}
+
+section.grid img {
+    width: 100%;
+}
+
+section.grid figcaption {
+    font-size: small;
+}
+
+section.grid a {
+    text-decoration: none;
+}
+
+section.grid h3
+{
+    grid-column: 1 / -1;
+    padding: 0;
+}
+
+/* SECTIONS FEATURED */
+
+section.featured img
+{
+    padding: 0 0 20px 0;
+}
+
+section.featured a:hover
+{
+    transform: scale(1.01);
+}
+
+/* Navigation filter styles */
+nav#filter {
+    text-align: right;
+}
+
+
+
+
+
+/* Styles for section with id "cans" */
+main section.big {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+main section.big img {
+    width: 100%;
+}
+
+main section.big figcaption,
+main section.big a {
+    font-size: x-small;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Styles for section with id "small" */
+main section.small {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+main section.small figcaption {
+    font-size: x-small;
+    text-align: center;
+}
+
+/* Styles for filter combo */
+select#filterCombo {
+    padding: 6px;
+    border-radius: 10px;
+}
+
+/* Button styles */
+button {
+    background-color: lightgray;
+    border: 0;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+
+
+figure.sold figcaption p::after
+{
+    content: " SOLD!";
+    color: tomato;
+}
+
+a.superbutton
+{
+    display: block;
+    width: 50%;
+    text-align: center;
+    border-radius: 20px;
+    color: var(--link);
+    padding: 8px;
+    margin: 0 auto;
+    text-decoration: none;
+    border: 1px solid var(--link);
+    
+}
+
+a.superbutton:hover
+{
+    transform: scale(1.01);
+    text-decoration: none;
+}
+
+
+
+sub
+{
+    font-size: xx-small;
+    font-weight: 700;
+    color: DarkGray;
+}
+
+section.shows ul
+{
+margin: 0 0 0 20px;
+}
+
+section.shows ul li
+{
+    font-size: small;
+    list-style:square;
+    padding: 0 0 .5em 0;
+
+}
+
+section.shows ul i
+{
+color: Silver;
+}
+
+#contact_buttons
+{
+}
+
+#contact_buttons a
+{
+display: block;
+background-color: var(--link);
+border-radius: 16px;
+padding: 10px;
+margin-bottom: 10px;
+color: white;
+text-decoration: none;
+}
+
+section.testimonial
+{
+    padding: 60px;
+    background-color: var(--link);
+    color: white;
+    border-radius: 26px;
+    margin: 0 0 40px 0;
+
+}
+
+
+
+section.testimonial cite
+{
+    font-family: "Space Grotesk", sans-serif;
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: 700;
+}
+
+section.testimonial cite::before {
+    content: "- ";
+  }
