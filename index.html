@@ -17,7 +17,17 @@
 </head>
 
 <body>
-    <section id="contact"><a href=""><i class="fa-regular fa-file"></i> Resume</a> <a href=""><i class="fa-regular fa-paper-plane"></i> Contact</a></section>
+    <section id="contact">
+        <a href=""><i class="fa-regular fa-file"></i> Resume</a>
+        <script>
+            const a = ['\x73','\x68','\x61','\x6E','\x6E','\x69','\x65','\x62','\x69','\x73','\x68','\x6F','\x70'];
+            const b = ['\x67','\x6D','\x61','\x69','\x6C','\x2E','\x63','\x6F','\x6D'];
+            const user = a.join('');
+            const host = b.join('');
+            const link = '<a href="mailto:' + user + '@' + host + '"><i class="fa-regular fa-paper-plane"></i> Email</a>';
+            document.write(link);
+          </script>
+    </section>
 
     <header>
         <h1>Shannon Bishop</h1>
@@ -27,9 +37,8 @@
     <main>
 
 
-
         <section>
-            I am available for freelance illustration projects, specializing in vector graphics and digital design. I work in a bold, colorful, and quirky style. <a href="/contact">Reach out</a> to bring your visual concepts to life!
+            I am available for freelance illustration projects, specializing in vector graphics and digital design. I work in a bold, colorful, and quirky style.  to bring your visual concepts to life!
         </section>
     
         <section class="grid big">
@@ -46,6 +55,14 @@
             <h3>Featured Project</h3>
             <a href="/crookedcrab/"><img src="https://fpoimg.com/1200x400?text=Preview&bg_color=e6e6e6&text_color=8F8F8F" /></a>
             Recently my most of my work has been for Crooked Crab Breweing Co. I have created over 300 cans, 25 bottles, merch, a mural and a cast of zany characters.
+        </section>
+
+
+        <section class="testimonial">
+            <blockquote>
+                <p><i class="fa-solid fa-quote-left"></i> Chris is a blast to work with and I cannot speak highly enough about the amazing quality of work he does! His fun and whimsical style epitomizes the branding of Crooked Crab Brewing Company and meshes seamlessly with our personality and vision! <i class="fa-solid fa-quote-right"></i></p>
+                <cite>Earl Holman, Crooked Crab GM</cite>
+            </blockquote>
         </section>
 
     </main>

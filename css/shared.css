@@ -12,18 +12,13 @@ body {
     padding: 2.5em;
     margin: 0 auto;
     max-width: 900px;
-    line-height: normal;
+    line-height: inherit;
     background-color: var(--background);
     color: var(--text);
     font-family:"Playpen Sans", Arial, Helvetica, sans-serif;
+    font-size: large;
 }
 
-
-
-body#drhoneybrew
-{
-    --link: Chocolate;
-}
 
 /* LINKS */
 
@@ -62,6 +57,8 @@ img
 {
     width: 100%;
 }
+
+/* CONTACT BUTTONS */
 
 section#contact
 {
@@ -148,15 +145,6 @@ h4
 
 
 /* SECTIONS */
-
-address
-{
-    color: var(--link);
-padding: 0 0 6px 0;
-    font-size: medium;
-    font-weight: 700;
-    text-align: center;
-}
 
 section
 {
@@ -245,13 +233,6 @@ button {
     border-radius: 10px;
 }
 
-
-
-figure.sold figcaption p::after
-{
-    content: " SOLD!";
-    color: tomato;
-}
 
 a.superbutton
 {
