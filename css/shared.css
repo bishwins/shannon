@@ -5,7 +5,7 @@
 :root {
     --background: snow;
     --text: #454545;
-    --link: #E6007A;
+    --link: #E00078;
   }
 
 body {
@@ -126,7 +126,6 @@ h1
     font-weight: 800;
     font-style: italic;
 
-    padding: 0 0 10px 0;
 }
 
 @media (max-width: 700px) {
