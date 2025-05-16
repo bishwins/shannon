@@ -77,7 +77,7 @@ section#contact a
 
 section#contact a:hover
 {
-background-color: MediumVioletRed;
+background-color: #BB00E0;
 text-decoration: none;
 }
 
@@ -121,10 +121,14 @@ footer p#copyright {
 h1
 {
     font-family: "Sansita", sans-serif;
-    color: var(--link);
     font-size: 80px;
     font-weight: 800;
     font-style: italic;
+    color: #E00078; 
+    background-image: linear-gradient(90deg, #E00078 , #BB00E0 100%); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
 
 }
 
@@ -141,10 +145,14 @@ h1
 
 h2
 {
-    color: var(--link);
     padding: 0 0 20px 0;
     font-size:24px;
     font-weight: 500;
+    color: #E00078; 
+    background-image: linear-gradient(90deg, #E00078 , #BB00E0 100%); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
 }
 
 @media (max-width: 700px) {
@@ -309,20 +317,6 @@ section.shows ul i
 color: Silver;
 }
 
-#contact_buttons
-{
-}
-
-#contact_buttons a
-{
-display: block;
-background-color: var(--link);
-border-radius: 16px;
-padding: 10px;
-margin-bottom: 10px;
-color: white;
-text-decoration: none;
-}
 
 section.testimonial
 {
@@ -346,3 +340,8 @@ section.testimonial cite
 section.testimonial cite::before {
     content: "- ";
   }
+
+
+
+
+  
