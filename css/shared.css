@@ -100,7 +100,7 @@ text-decoration: none;
 /* FOOTER */
 
 footer a i {
-    font-size: x-large;
+    font-size: 1.5em;
     padding: 0 0 .5em 0;
 }
 
@@ -111,7 +111,7 @@ footer a:hover {
 }
 
 footer p#copyright {
-    font-size: x-small;
+    font-size: .5em;
 }
 
 
@@ -165,7 +165,7 @@ h3
 h4
 {
     color: var(--link);
-    font-size: large;
+    font-size: 1.15em;
     font-weight: 700;
 
 }
@@ -192,7 +192,8 @@ section.grid img {
 }
 
 section.grid figcaption {
-    font-size: small;
+    font-size: .9em;
+    line-height: 1.2em;
 }
 
 section.grid a {
@@ -218,9 +219,6 @@ section.featured a:hover
 }
 
 
-
-
-/* Styles for section with id "cans" */
 main section.big {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
@@ -231,35 +229,11 @@ main section.big img {
 
 main section.big figcaption,
 main section.big a {
-    font-size: small;
+    font-size: .9em;
     text-align: center;
     text-decoration: none;
+    line-height: 1.2em;
 }
-
-/* Styles for section with id "small" */
-main section.small {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-}
-
-main section.small figcaption {
-    font-size: x-small;
-    text-align: center;
-}
-
-/* Styles for filter combo */
-select#filterCombo {
-    padding: 6px;
-    border-radius: 10px;
-}
-
-/* Button styles */
-button {
-    background-color: lightgray;
-    border: 0;
-    padding: 8px;
-    border-radius: 10px;
-}
-
 
 a.superbutton
 {
@@ -283,32 +257,6 @@ a.superbutton:hover
 
 
 
-sub
-{
-    font-size: xx-small;
-    font-weight: 700;
-    color: DarkGray;
-}
-
-section.shows ul
-{
-margin: 0 0 0 20px;
-}
-
-section.shows ul li
-{
-    font-size: small;
-    list-style:square;
-    padding: 0 0 .5em 0;
-
-}
-
-section.shows ul i
-{
-color: Silver;
-}
-
-
 section.testimonial
 {
     padding: 60px;
@@ -320,11 +268,10 @@ section.testimonial
 }
 
 
-
 section.testimonial cite
 {
     text-transform: uppercase;
-    font-size: large;
+    font-size: 1em;
     font-weight: 700;
 }
 
