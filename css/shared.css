@@ -42,6 +42,7 @@ h1 {
   font-style: italic;
   color: var(--link);
   padding-bottom: 0.2em;
+  filter: drop-shadow(-2px 4px 0px rgba(224, 0, 120, 0.25));
 }
 
 h2 {
