@@ -85,7 +85,8 @@ p {
 img {
   display: block;
   width: 100%;
-  border-radius: 20px;
+  border-radius: 14px;
+  margin-bottom: 8px;
 }
 
 /* LINKS */
@@ -202,7 +203,7 @@ section.grid h4 {
 /* FEATURED SECTIONS */
 
 section.featured img {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 section.featured a:hover {
@@ -252,11 +253,4 @@ section.testimonial cite::before {
   section#contact a {
     width: 100%;
   }
-}
-
-
-
-figure img
-{
-  padding: 0 0 10px 0;
 }
