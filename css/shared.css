@@ -67,6 +67,8 @@ h4 {
   font-style: italic;
   color: var(--link);
   padding-bottom: 10px;
+  line-height: 1.2em;
+  margin-bottom: .5em;
 }
 
 h5 {
@@ -145,7 +147,7 @@ padding: 60px;
 }
 
 section {
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 
 footer
